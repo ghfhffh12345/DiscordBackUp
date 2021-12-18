@@ -1,5 +1,3 @@
-const { MessageMentions } = require('discord.js');
-
 class SameServer {
     constructor (client, backID) {
         this.client = client;

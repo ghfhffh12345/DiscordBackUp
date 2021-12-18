@@ -10,3 +10,7 @@ Create the following config.json file.
   "frontID": "Input your front server id"
 }
 ```
+
+> # Precautions
+The back server must have a channel with the same name as the front server's channel.
+If the message is on a channel only on the front server, it cannot be saved on the back server.

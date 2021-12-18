@@ -6,7 +6,7 @@ Create the following config.json file.
 ```json
 {
   "token": "Input your bot token",
-  "backID": "Input your back server id"
+  "backID": "Input your back server id",
   "frontID": "Input your front server id"
 }
 ```

@@ -1,8 +1,8 @@
 const SameServer = require('./sameServer');
 
 class SameMessageUpdate  extends SameServer {
-    constructor (frontOldMessage, frontNewMessage, client) {
-        super(client);
+    constructor (frontOldMessage, frontNewMessage, client, backID) {
+        super(client, backID);
         this.frontOldMessage = frontOldMessage;
         this.frontNewMessage = frontNewMessage;
     }

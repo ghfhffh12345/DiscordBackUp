@@ -1,8 +1,8 @@
 const SameServer = require('./sameServer');
 
 class SameMessageCreate extends SameServer {
-    constructor (frontMessage, client) {
-        super(client);
+    constructor (frontMessage, client, backID) {
+        super(client, backID);
         this.frontMessage = frontMessage;
     }
 

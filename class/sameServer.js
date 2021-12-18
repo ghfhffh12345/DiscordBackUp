@@ -1,13 +1,13 @@
-const { backID } = require('../config.json');
 const { MessageMentions } = require('discord.js');
 
 class SameServer {
-    constructor (client) {
+    constructor (client, backID) {
         this.client = client;
+        this.backID = backID;
     }
 
     async setSameChannel(frontChannelName) {
-        this.channel = await (await this.client.guilds.fetch(backID)).channels.cache.find(ch => ch.name == frontChannelName);
+        this.channel = await (await this.client.guilds.fetch(this.backID)).channels.cache.find(ch => ch.name == frontChannelName);
         return this
     }
 

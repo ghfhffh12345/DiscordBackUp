@@ -1,6 +1,6 @@
 const { token, frontID } = require('./config.json');
 const { Client } = require('discord.js');
-const client = new Client({ intents: ["GUILDS", "GUILD_BANS", "GUILD_EMOJIS_AND_STICKERS", "GUILD_INVITES", "GUILD_MEMBERS", "GUILD_MESSAGES", "GUILD_MESSAGE_REACTIONS", "GUILD_MESSAGE_TYPING", "GUILD_PRESENCES", "GUILD_VOICE_STATES", "GUILD_WEBHOOKS"] });
+const client = new Client({ intents: ["GUILDS", "GUILD_EMOJIS_AND_STICKERS", "GUILD_INVITES", "GUILD_MEMBERS", "GUILD_MESSAGES", "GUILD_MESSAGE_REACTIONS", "GUILD_PRESENCES", "GUILD_WEBHOOKS"] });
 
 const SameServer = require('./class/sameServer');
 const SameMessageCreate = require('./class/sameMessageCreate');

@@ -1,7 +1,7 @@
 > # Function
 The BackUp bot saves messages from the Front server to the Back server as they are.
 
-> * How to use
+> # How to use
 Create the following config.json file.
 ```json
 {
